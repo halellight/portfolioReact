@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useScroll } from "framer-motion";
 
 // import Section2 from "";
 const Ttm = () => {

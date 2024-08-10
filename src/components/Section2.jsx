@@ -1,5 +1,5 @@
 import React from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { useTransform, motion } from "framer-motion";
 import Pic2 from "../images/SCREEN 03.jpg";
 
 const Section2 = ({ scrollYProgress }) => {

@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import Projects from "./components/Projects";
 import Wyfim from "./components/Wyfim";
 import Navbar from "./components/Navbar";
-import Intro from "./Intro";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Loading from "./components/Loading";
@@ -29,44 +28,39 @@ function App() {
     }
 
     requestAnimationFrame(raf);
+
+    // return () => {
+    //   // Cleanup Lenis on component unmount
+    //   lenis.destroy();
+    // };
   }, []);
 
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-
-      const locomotiveScroll = new LocomotiveScroll();
-
-      setTimeout(() => {
-        setIsLoading(false);
-
-        document.body.style.cursor = "default";
-
-        window.scrollTo(0, 0);
-      }, 2000);
-    })();
+    setTimeout(() => {
+      setIsLoading(false);
+      document.body.style.cursor = "default";
+      window.scrollTo(0, 0);
+    }, 2000);
   }, []);
 
   return (
     <div>
-      {/* <Navbar />
-      <Landing />
-      <Projects />
-      <Wyfim />
-      <ZoomParallax />
-
-      <Contact /> */}
       <AnimatePresence mode="wait">{isLoading && <Loading />}</AnimatePresence>
-      <Navbar />
-      <Main />
-      <Landing />
-      <Projects />
-      <Wyfim />
-      <ZoomParallax />
-      <Ttm />
-      <Contact />
+      {!isLoading && (
+        <>
+          <Navbar />
+          <Main />
+          <Landing />
+          <Projects />
+          <Wyfim />
+          <ZoomParallax />
+          <Ttm />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
