@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import image from "../images/PRAISE FORMAL.jpg";
+import image from "../images/praise formal b&w.jpg";
 import styles from "./Main.module.scss";
 
 const Main = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Pic1 from "../images/SCREEN 03.jpg";
+import Pic1 from "../images/Group 648.png";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const Section1 = ({ scrollYProgress }) => {
@@ -11,26 +11,26 @@ const Section1 = ({ scrollYProgress }) => {
       style={{
         scale,
         rotate,
-        clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)",
       }}
       className="h-screen sticky top-0 bg-[#1C69FF] text-[24px] flex items-center justify-center text-white"
     >
-      <div className="flex flex-col gap-4">
-        <div className="flex items-center justify-between w-full">
-          {/* First "Scroll Perspective" p tag with Playfair Display font */}
-          <p className="text-700 text-[36px]">Scroll Perspective</p>
+      <div className="flex flex-col gap-4 px-4 lg:px-8">
+        <div className="flex cursor-pointer items-center justify-between w-full">
+          <p className="font-bold text-[32px] sm:text-[42px] lg:text-[52px]">
+            BUSA APP
+          </p>
 
           {/* Rotating arrow */}
           <motion.div
-            whileHover={{ rotate: -45 }} // Rotates 90 degrees on hover
+            whileHover={{ rotate: -45 }} // Rotates 45 degrees on hover
             transition={{ duration: 0.5 }}
-            className="text-[36px] cursor-pointer"
+            className="text-[28px] sm:text-[36px] lg:text-[44px] cursor-pointer"
           >
             →
           </motion.div>
         </div>
 
-        <div className="relative" style={{ width: "1157px", height: "615px" }}>
+        <div className="relative w-full max-w-[1157px] h-auto">
           <img
             src={Pic1}
             alt="im"
