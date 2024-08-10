@@ -1,0 +1,58 @@
+.container {
+  height: 250vh;
+  position: relative;
+  bottom: 0vh;
+
+  .sticky {
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    background-color: #001b19;
+    overflow: hidden;
+    // padding-bottom: 20vh;
+  }
+  .body1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #afa18f;
+
+    position: absolute;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    cursor: default;
+
+    div {
+      width: 1112px;
+      display: flex;
+
+      height: 657px;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+      }
+      .p1 {
+        color: #4e525a;
+      }
+    }
+
+    p {
+      width: 472px;
+
+      padding: 40px;
+      text-align: left;
+    }
+    span {
+      color: #00a699;
+    }
+    img {
+      color: #4e525a;
+      width: 513px;
+    }
+  }
+}

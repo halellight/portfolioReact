@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #00796b;
+  color: #ffffff;
+  text-align: center;
+
+  .contactBox {
+    background-image: url("../images/backdrop.png"); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    width: 1240px;
+    height: 623px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    color: #ffffff;
+
+    .letTalk {
+      background-image: url("../images/Link.svg");
+      //   font-size: 24px;
+      //   font-weight: bold;
+      //   margin-bottom: 10px;
+      background-size: cover;
+      background-position: center;
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+    }
+    .letTalk:hover {
+      background-image: url("../images/Link.svg");
+      //   font-size: 24px;
+      //   font-weight: bold;
+      //   margin-bottom: 10px;
+      //   background-size: cover;
+      //   background-position: center;
+      //   width: 210px;
+      //   height: 210px;
+      //   transition: 0.2s;
+
+      cursor: pointer;
+    }
+
+    .email {
+      font-size: 36px;
+      margin: 10px 0;
+      cursor: pointer;
+      font-weight: 700;
+      color: #000;
+    }
+    .email:hover {
+      text-decoration: underline;
+    }
+
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 15px;
+
+      div {
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+        align-items: center;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #004d40;
+        }
+      }
+    }
+  }
+
+  .nav {
+    bottom: 0;
+    display: flex;
+    gap: 60px;
+    width: 100%;
+    height: 260px; /* Adjust height as needed */
+    background: #000;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      color: #afa18f;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #00a699;
+      }
+    }
+  }
+}
+
+.scrollContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  color: #afa18f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  height: 115px;
+
+  .scrollText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 15s linear infinite;
+
+    span {
+      display: inline-block;
+      padding-right: 100%;
+      font-size: 136px;
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+    opacity: 0.55;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
