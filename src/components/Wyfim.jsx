@@ -80,7 +80,7 @@ const Wyfim = () => {
                 <img
                   src={src}
                   alt={`imagine-${index}`}
-                  className="w-full h-full object-cover ios:max-h-[30vh]"
+                  className="w-full h-full object-cover ios:max-h-[30vh] ios:border-[1px] ios:border-[#afa18f]"
                 />
               </motion.div>
             </div>
