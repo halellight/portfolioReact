@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import image from "../images/praise formal b&w.jpg";
-import styles from "./Main.module.scss";
 
 const Main = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -40,16 +39,18 @@ const Main = () => {
       </div>
 
       <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 h-[570px] w-[285px] items-center justify-center flex  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 h-[40vh] w-[40vw] max-w-[285px] max-h-[570px] items-center justify-center flex top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         id="image"
       >
         <img src={image} alt="" className="object-cover w-full h-full" />
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 text-sm gap-[50px] max-w-[1240px] text-[#afa18f] mx-auto">
-        <span>PRAISE IBE CHIDUMEBI</span>
-        <span className="text-xs">| SCROLL TO EXPLORE</span>
-        <span className="cursor-pointer hover:text-[#00A699]">
+      <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 text-xs md:text-sm gap-[50px] max-w-[1240px] text-[#afa18f] mx-auto">
+        <span className="text-center md:text-left">PRAISE IBE CHIDUMEBI</span>
+        <span className="text-center md:text-left text-[10px] md:text-xs">
+          | SCROLL TO EXPLORE
+        </span>
+        <span className="cursor-pointer hover:text-[#00A699] text-center md:text-right">
           WORK WITH ME
         </span>
       </div>

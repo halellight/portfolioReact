@@ -2,13 +2,13 @@ import React from "react";
 
 import styles from "./styles.module.scss";
 
-import Picture1 from "../images/landing3.png";
-import Picture2 from "../images/image2.png";
-import Picture3 from "../images/image3.png";
+import Picture1 from "../images/landing4.png";
+import Picture2 from "../images/newimagine.svg";
+import Picture3 from "../images/newimagine2.svg";
 import Picture4 from "../images/image4.png";
-import Picture5 from "../images/image5.png";
-import Picture6 from "../images/image6.png";
-import Picture7 from "../images/image7.png";
+import Picture5 from "../images/Frame 48095688.svg";
+import Picture6 from "../images/figo.svg";
+import Picture7 from "../images/THUMBNAIL.svg";
 
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";

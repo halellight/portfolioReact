@@ -33,9 +33,10 @@ const Landing = () => {
             onMouseLeave={() => {
               setIsHovered(false);
             }}
+            className="lg:text-[64px] text-[48px] md:text-[60px]"
           >
-            A visual designer - with skills that havent been replaced by A.I
-            (yet) - making good shit since '04
+            A visual designer and front-end developer with a passion for
+            creating intuitive and high-performing digital experiences.
           </p>
         </motion.div>
 

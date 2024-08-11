@@ -40,7 +40,7 @@ const Contact = () => {
               <div>
                 <img src={X} alt="" />
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/_Halel"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -50,7 +50,7 @@ const Contact = () => {
               <div>
                 <img src={In} alt="" />
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/praise-ibe-3556a625b/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

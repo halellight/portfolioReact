@@ -9,8 +9,8 @@
     height: 100vh;
     background-color: #001b19;
     overflow: hidden;
-    // padding-bottom: 20vh;
   }
+
   .main {
     width: 100%;
     height: 100%;
@@ -19,45 +19,64 @@
     justify-content: center;
     position: absolute;
     top: -70px;
+
     .el {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; // Gap between image and text
+
       .imageContainer {
-        // width: 300pxvw;
         height: 20vh;
         position: relative;
+        flex: 1; // Allows image to take up equal space
+        margin-top: 80px;
       }
+
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
-    }
-    &:nth-of-type(2) {
-      .imageContainer {
-        top: 10vh;
+
+      p {
+        color: #afa18f;
+        text-align: center;
+        font-weight: 700;
+        font-size: larger;
+        flex: 1; // Allows text to take up equal space
       }
     }
-    &:nth-of-type(3) {
-      .imageContainer {
-        top: 15vh;
-      }
+
+    &:nth-of-type(2) .imageContainer {
+      top: 10vh;
     }
-    &:nth-of-type(4) {
-      .imageContainer {
-        top: 20vh;
-      }
+
+    &:nth-of-type(3) .imageContainer {
+      top: 15vh;
     }
-    &:nth-of-type(5) {
-      .imageContainer {
-        top: 45vh;
-      }
+
+    &:nth-of-type(4) .imageContainer {
+      top: 20vh;
+    }
+
+    &:nth-of-type(5) .imageContainer {
+      top: 45vh;
     }
   }
 
-  p {
-    color: #afa18f;
-    text-align: center;
-    font-weight: 700;
-    padding-bottom: 150px;
-    font-size: larger;
+  @media (max-width: 768px) {
+    // Adjust the breakpoint as needed
+    .main {
+      .el {
+        flex-direction: column;
+        gap: 0; // Remove gap for column layout
+
+        p {
+          padding-bottom: 20px;
+        }
+      }
+    }
   }
 }
