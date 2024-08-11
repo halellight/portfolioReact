@@ -11,48 +11,67 @@ const Experience = () => {
 
           <div class="space-y-12 mt-12">
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+              <div class="lg:text-3xl md:text-[36px] text-[20px] font-semibold">
                 NOW
               </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
-                <p class="lg:text-[64px] md:text-[48px] text-[28px] font-semibold">
+                <p class="lg:text-[64px] md:text-[48px] text-[26px] font-semibold ">
                   Design Lead (Customer)
                 </p>
-                <p class="text-m md:text-lg lg:text-xl text-[#00A699]">EASE</p>
+                <a
+                  href="https://ease-beta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cursor-pointer text-m md:text-lg lg:text-xl text-[#00A699] "
+                >
+                  EASE
+                </a>
               </div>
             </div>
 
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+              <div class="lg:text-3xl md:text-[36px] text-[20px] font-semibold">
                 2022
               </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
-                <p class="lg:text-[64px] md:text-[48px] text-[28px] font-semibold">
+                <p class="lg:text-[64px] md:text-[48px] text-[26px] font-semibold">
                   Network Engineer
                 </p>
-                <p class="text-m md:text-lg lg:text-xl text-[#00A699]">
+                <a
+                  href="https://www.huawei.com/en/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-m md:text-lg lg:text-xl text-[#00A699] cursor-pointer"
+                >
                   Huawei
-                </p>
+                </a>
               </div>
             </div>
 
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+              <div class="lg:text-3xl md:text-[36px] text-[20px] font-semibold">
                 2022
               </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
-                <p class="lg:text-[72px] md:text-[48px] text-[28px] font-semibold">
+                <p class="lg:text-[72px] md:text-[48px] text-[26px] font-semibold">
                   System Analyst
                 </p>
-                <p class="text-m md:text-lg lg:text-xl text-[#00A699]">NNPC</p>
+                <a
+                  href="https://nnpcgroup.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-m md:text-lg lg:text-xl text-[#00A699] cursor-pointer"
+                >
+                  NNPC
+                </a>
               </div>
             </div>
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+              <div class="lg:text-3xl md:text-[36px] text-[20px] font-semibold">
                 2021
               </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
-                <p class="lg:text-[72px] md:text-[48px] text-[28px] font-semibold">
+                <p class="lg:text-[72px] md:text-[48px] text-[26px] font-semibold">
                   Product Designer
                 </p>
                 <p class="text-m md:text-lg lg:text-xl text-[#00A699]">

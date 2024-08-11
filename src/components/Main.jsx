@@ -27,27 +27,28 @@ const Main = () => {
 
   return (
     <div className="relative h-screen bg-[#001b19] flex justify-center items-center overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap p-4 text-[#afa18f] lg:text-[128px] font-bold md:text-[72px] text-[48px]">
-        <span
-          className="block z-0 inset-0"
-          style={{
-            transform: `translateX(-25%) translateY(${parallaxOffset1}px)`,
-          }}
-        >
-          Praise
-        </span>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap p-4 text-[#afa18f] lg:text-[128px] font-bold md:text-[82px] text-[64px]">
         <span
           className="block z-10 inset-0"
           style={{
-            transform: `translateX(10%) translateY(${parallaxOffset2}px)`,
+            transform: `translateX(-15%) translateY(${parallaxOffset2}px)`,
           }}
         >
           Ibe
         </span>
         <span
+          className="block z-0 inset-0"
+          style={{
+            transform: `translateX(0%) translateY(${parallaxOffset1}px)`,
+          }}
+        >
+          Praise
+        </span>
+
+        <span
           className="block z-10 inset-0"
           style={{
-            transform: `translateX(25%) translateY(${parallaxOffset3}px)`,
+            transform: `translateX(15%) translateY(${parallaxOffset3}px)`,
           }}
         >
           Chidumebi
@@ -66,7 +67,7 @@ const Main = () => {
           PRAISE IBE CHIDUMEBI
         </span>
         <span className="text-center md:text-left text-[10px] md:text-xs">
-          | SCROLL TO EXPLORE
+          ↓ SCROLL TO EXPLORE
         </span>
         <span
           onClick={handleDownloadCV}
