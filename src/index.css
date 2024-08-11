@@ -17,7 +17,7 @@ body {
   /* Example styles specific to iOS devices */
   max-height: 20vh;
   max-width: 20vw;
-  width: 200px;
+  width: 100%;
 }
 
 code {
