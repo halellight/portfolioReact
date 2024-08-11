@@ -65,11 +65,11 @@ const Contact = () => {
             <a href="#projects">Work</a>
             <a href="#contact">Contact</a>
           </nav>
-          <div className={styles.scrollContainer}>
+          {/* <div className={styles.scrollContainer}>
             <div className={styles.scrollText}>
               <span>Praise Ibe Chidumebi</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

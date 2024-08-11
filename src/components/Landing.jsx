@@ -24,10 +24,10 @@ const Landing = () => {
           transition={{ duration: 0.7 }}
           className="text-left md:text-left"
         >
-          <p className="text-[#4e525a] lg:text-[48px] md:text-[36px] text-[20px] font-bold">
+          <p className="text-[#4e525a] lg:text-[36px] md:text-[36px] text-[20px] font-bold">
             ABOUT
           </p>
-          <p className="text-[#afa18f] lg:text-[72px] md:text-[48px] text-[32px] font-bold mt-4">
+          <p className="text-[#afa18f] lg:text-[64px] md:text-[48px] text-[32px] font-bold mt-4">
             Hii, I'm Praise,{" "}
             <span className="text-[#00A699]">a visual designer</span> and
             front-end developer with a passion for creating intuitive and

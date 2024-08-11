@@ -22,7 +22,8 @@ const Main = () => {
 
   // Calculate parallax values
   const parallaxOffset1 = scrollY * 0.2; // Adjust multiplier for desired parallax effect
-  const parallaxOffset2 = scrollY * 0.3;
+  const parallaxOffset2 = scrollY * 0.25;
+  const parallaxOffset3 = scrollY * 0.3;
 
   return (
     <div className="relative h-screen bg-[#001b19] flex justify-center items-center overflow-hidden">
@@ -38,19 +39,27 @@ const Main = () => {
         <span
           className="block z-10 inset-0"
           style={{
-            transform: `translateX(45%) translateY(${parallaxOffset2}px)`,
+            transform: `translateX(25%) translateY(${parallaxOffset2}px)`,
+          }}
+        >
+          Ibe
+        </span>
+        <span
+          className="block z-10 inset-0"
+          style={{
+            transform: `translateX(45%) translateY(${parallaxOffset3}px)`,
           }}
         >
           Chidumebi
         </span>
       </div>
 
-      <div
+      {/* <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-500 h-[40vh] w-[40vw] max-w-[285px] max-h-[570px] items-center justify-center flex top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         id="image"
       >
         <img src={image} alt="" className="object-cover w-full h-full" />
-      </div>
+      </div> */}
 
       <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 text-xs md:text-sm gap-[50px] max-w-[1240px] text-[#afa18f] mx-auto">
         <span className="text-center md:text-left text-[10px] md:text-xs">

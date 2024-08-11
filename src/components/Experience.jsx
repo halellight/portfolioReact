@@ -5,13 +5,15 @@ const Experience = () => {
     <div>
       <div class="bg-[#001B19] text-[#afa18f] py-12 px-12">
         <div class="max-w-[1240px] mx-auto">
-          <h2 class="text-[#4e525a] lg:text-[48px] md:text-[36px] text-[20px] font-bold">
+          <h2 class="text-[#4e525a] lg:text-[36px] md:text-[36px] text-[20px] font-bold">
             EXPERIENCE
           </h2>
 
           <div class="space-y-12 mt-12">
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="text-3xl font-bold">NOW</div>
+              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+                NOW
+              </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
                 <p class="lg:text-[64px] md:text-[48px] text-[28px] font-semibold">
                   Design Lead (Customer)
@@ -21,7 +23,9 @@ const Experience = () => {
             </div>
 
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="text-3xl font-bold">2022</div>
+              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+                2022
+              </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
                 <p class="lg:text-[64px] md:text-[48px] text-[28px] font-semibold">
                   Network Engineer
@@ -33,7 +37,9 @@ const Experience = () => {
             </div>
 
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="text-3xl font-bold">2022</div>
+              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+                2022
+              </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
                 <p class="lg:text-[72px] md:text-[48px] text-[28px] font-semibold">
                   System Analyst
@@ -42,7 +48,9 @@ const Experience = () => {
               </div>
             </div>
             <div class="flex flex-col md:flex-row justify-between">
-              <div class="text-3xl font-bold">2021</div>
+              <div class="lg:text-3xl md:text-[36px] text-[24px] font-semibold">
+                2021
+              </div>
               <div class="text-right md:text-right mt-4 md:mt-0">
                 <p class="lg:text-[72px] md:text-[48px] text-[28px] font-semibold">
                   Product Designer

@@ -64,13 +64,13 @@ const Wyfim = () => {
           >
             <div className="flex flex-col justify-center items-center gap-5">
               {index === 0 && (
-                <p className="text-[#4e525a] lg:text-[48px] md:text-[36px] text-[20px] font-bold">
+                <p className="text-[#4e525a] lg:text-[36px] md:text-[30px] text-[20px] font-bold">
                   TOOLS I WORK WITH
                 </p>
               )}
               <motion.div
                 style={{ rotateZ, opacity, top }}
-                className="h-[7vh] relative mt-20 lg:h-[20vh] md:h-[10vh]"
+                className="h-[5vh] relative mt-20 lg:h-[20vh] md:h-[10vh]"
               >
                 <img
                   src={src}
