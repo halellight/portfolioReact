@@ -13,6 +13,7 @@ import Loading from "./components/Loading";
 import Main from "./components/Main";
 import { AnimatePresence } from "framer-motion";
 import Ttm from "./components/Ttm";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
           <Ttm />
           <Contact />
           <Footer />
+          <SpeedInsights />
         </>
       )}
     </div>
