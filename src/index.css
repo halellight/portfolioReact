@@ -13,6 +13,12 @@ body {
 
   margin-bottom: 0vh;
 }
+.ios-specific-class {
+  /* Example styles specific to iOS devices */
+  max-height: 20vh;
+  max-width: 20vw;
+  width: 200px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
