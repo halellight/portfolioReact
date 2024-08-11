@@ -5,7 +5,12 @@ import Picture2 from "../images/Frame 48095931.svg";
 import Picture3 from "../images/Frame 48095932.svg";
 import Picture4 from "../images/Frame 48095933.svg";
 
+const isIOS = () => {
+  return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+};
+
 const Wyfim = () => {
+  const iosClass = isIOS() ? "ios-specific-class" : "";
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -70,12 +75,12 @@ const Wyfim = () => {
               )}
               <motion.div
                 style={{ rotateZ, opacity, top }}
-                className="h-[5vh] relative mt-20 lg:h-[20vh] md:h-[10vh]"
+                className="h-[7vh] relative mt-20 lg:h-[20vh] md:h-[10vh]"
               >
                 <img
                   src={src}
                   alt={`imagine-${index}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover ios:max-h-[50vh]"
                 />
               </motion.div>
             </div>

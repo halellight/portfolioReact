@@ -47,7 +47,7 @@ const Main = () => {
         <span
           className="block z-10 inset-0"
           style={{
-            transform: `translateX(45%) translateY(${parallaxOffset3}px)`,
+            transform: `translateX(35%) translateY(${parallaxOffset3}px)`,
           }}
         >
           Chidumebi
