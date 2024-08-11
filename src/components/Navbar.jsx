@@ -40,12 +40,12 @@ const Navbar = () => {
           </a>
         </div>
         <div className="md:flex items-center space-x-4">
-          <span className="p-8 text-gray-500 text-xs md:text-lg lg:text-xl ">
+          <span className="p-2 text-gray-500 text-[10px] md:text-lg lg:text-xl ">
             [ABJ]
             <motion.span
               animate={{ opacity: [1, 0.65, 1] }}
               transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-              className="text-[#00A699] font-bold text-xs md:text-lg lg:text-xl"
+              className="text-[#00A699] font-bold text-[10px] md:text-lg lg:text-xl"
             >
               {formattedTime}
             </motion.span>
@@ -62,7 +62,7 @@ const Navbar = () => {
             }`}
           ></div>
           <div
-            className={`relative w-6 h-0.5 bg-[#afa18f] my-1 transition-transform duration-300 ${
+            className={`relative w-4 h-0.5 bg-[#afa18f] my-1 transition-transform duration-300 ${
               isActive ? "opacity-0" : "opacity-100"
             }`}
           ></div>
