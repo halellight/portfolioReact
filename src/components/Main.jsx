@@ -27,7 +27,7 @@ const Main = () => {
 
   return (
     <div className="relative h-screen bg-[#001b19] flex justify-center items-center overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-[#afa18f] lg:text-[128px] font-bold md:text-[72px] text-[48px]">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap p-4 text-[#afa18f] lg:text-[128px] font-bold md:text-[72px] text-[48px]">
         <span
           className="block z-0 inset-0"
           style={{
@@ -39,7 +39,7 @@ const Main = () => {
         <span
           className="block z-10 inset-0"
           style={{
-            transform: `translateX(25%) translateY(${parallaxOffset2}px)`,
+            transform: `translateX(10%) translateY(${parallaxOffset2}px)`,
           }}
         >
           Ibe
@@ -47,7 +47,7 @@ const Main = () => {
         <span
           className="block z-10 inset-0"
           style={{
-            transform: `translateX(35%) translateY(${parallaxOffset3}px)`,
+            transform: `translateX(25%) translateY(${parallaxOffset3}px)`,
           }}
         >
           Chidumebi
