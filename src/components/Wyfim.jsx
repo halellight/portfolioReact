@@ -1,10 +1,9 @@
 import React, { useRef } from "react";
-import styles from "./clean.module.scss";
+import { useScroll, useTransform, motion } from "framer-motion";
 import Picture1 from "../images/Frame 48095914.svg";
 import Picture2 from "../images/Frame 48095931.svg";
 import Picture3 from "../images/Frame 48095932.svg";
 import Picture4 from "../images/Frame 48095933.svg";
-import { useScroll, useTransform, motion } from "framer-motion";
 
 const Wyfim = () => {
   const container = useRef(null);
@@ -56,17 +55,28 @@ const Wyfim = () => {
   ];
 
   return (
-    <div ref={container} className={styles.container}>
-      <div className={styles.sticky}>
+    <div ref={container} className="h-[300vh] relative">
+      <div className="sticky top-0 h-screen bg-[#001b19] overflow-hidden">
         {pictures.map(({ src, rotateZ, opacity, top }, index) => (
-          <div key={index} className={styles.main}>
-            <div className={styles.el}>
-              {index === 0 && <p>TOOLS I WORK WITH</p>}
+          <div
+            key={index}
+            className="w-full h-full flex items-center justify-center absolute -top-16"
+          >
+            <div className="flex flex-col justify-center items-center gap-5">
+              {index === 0 && (
+                <p className="text-[#4e525a] lg:text-[48px] md:text-[36px] text-[20px] font-bold">
+                  TOOLS I WORK WITH
+                </p>
+              )}
               <motion.div
-                style={{ src, rotateZ, opacity, top }}
-                className={styles.imageContainer}
+                style={{ rotateZ, opacity, top }}
+                className="h-[7vh] relative mt-20 lg:h-[20vh] md:h-[10vh]"
               >
-                <img src={src} alt={`imagine-${index}`} />
+                <img
+                  src={src}
+                  alt={`imagine-${index}`}
+                  className="w-full h-full object-cover"
+                />
               </motion.div>
             </div>
           </div>

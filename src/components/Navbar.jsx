@@ -40,7 +40,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="md:flex items-center space-x-4">
-          <span className="p-4 text-gray-500 text-xs md:text-lg lg:text-xl ">
+          <span className="p-8 text-gray-500 text-xs md:text-lg lg:text-xl ">
             [ABJ]
             <motion.span
               animate={{ opacity: [1, 0.65, 1] }}
