@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import styles from "./clean.module.scss";
-import Picture1 from "../images/creative.png";
-import Picture2 from "../images/Frame 48095912 (1).png";
-import Picture3 from "../images/creative3.png";
-import Picture4 from "../images/Frame 48095912 (1).png";
+import Picture1 from "../images/Frame 48095914.svg";
+import Picture2 from "../images/Frame 48095931.svg";
+import Picture3 from "../images/Frame 48095932.svg";
+import Picture4 from "../images/Frame 48095933.svg";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const Wyfim = () => {
@@ -61,7 +61,7 @@ const Wyfim = () => {
         {pictures.map(({ src, rotateZ, opacity, top }, index) => (
           <div key={index} className={styles.main}>
             <div className={styles.el}>
-              {index === 0 && <p>Tools I work with</p>}
+              {index === 0 && <p>TOOLS I WORK WITH</p>}
               <motion.div
                 style={{ src, rotateZ, opacity, top }}
                 className={styles.imageContainer}

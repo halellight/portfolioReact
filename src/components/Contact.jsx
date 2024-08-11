@@ -20,7 +20,7 @@ const Contact = () => {
               <div>
                 <img src={Ig} alt="" />
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ui.halel?igsh=MWg2cmxkZWk1b21jMw=="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -60,9 +60,9 @@ const Contact = () => {
             </div>
           </div>
           <nav className={styles.nav}>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
+            <a href="#landing">Home</a>
+            <a href="#wyfim">About</a>
+            <a href="#projects">Work</a>
             <a href="#contact">Contact</a>
           </nav>
           <div className={styles.scrollContainer}>

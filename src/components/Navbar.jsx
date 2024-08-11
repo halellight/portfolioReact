@@ -32,9 +32,12 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 w-full p-1 bg-[#001B19] text-[#afa18f] flex justify-between items-center  z-50">
       <div className="max-w-[1240px] mx-auto p-4 flex justify-between items-center gap-[100px] md:gap-[200px] lg:gap-[450px]">
         <div className="flex items-center cursor-pointer">
-          <p className="text-xl md:text-3xl font-bold">
-            <span className="text-[#00A699]">.</span>halel
-          </p>
+          <a href="landing" className="text-xl md:text-3xl font-bold">
+            <span hre className="text-[#00A699]">
+              .
+            </span>
+            halel
+          </a>
         </div>
         <div className="md:flex items-center space-x-4">
           <span className="p-4 text-gray-500 text-xs md:text-lg lg:text-xl ">
@@ -92,8 +95,10 @@ const Navbar = () => {
             <RevealLinks />
             <div className="max-w-[1240px] mx-auto p-4 flex justify-between items-center gap-[48px] text-sm">
               <a href="https://x.com/_Halel">X</a>
-              <a href="#">Instagram</a>
-              <a href="#">Dribble</a>
+              <a href="https://www.instagram.com/ui.halel?igsh=MWg2cmxkZWk1b21jMw==">
+                Instagram
+              </a>
+              <a href="https://dribbble.com/_Halel">Dribble</a>
               <a href="https://www.linkedin.com/in/praise-ibe-3556a625b/">
                 LinkedIn
               </a>

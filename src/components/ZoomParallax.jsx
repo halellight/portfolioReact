@@ -2,10 +2,10 @@ import React from "react";
 
 import styles from "./styles.module.scss";
 
-import Picture1 from "../images/landing4.png";
+import Picture1 from "../images/landing3.svg";
 import Picture2 from "../images/newimagine.svg";
 import Picture3 from "../images/newimagine2.svg";
-import Picture4 from "../images/image4.png";
+import Picture4 from "../images/THUMBNAIL2.svg";
 import Picture5 from "../images/Frame 48095688.svg";
 import Picture6 from "../images/figo.svg";
 import Picture7 from "../images/THUMBNAIL.svg";

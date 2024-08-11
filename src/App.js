@@ -15,6 +15,7 @@ import { AnimatePresence } from "framer-motion";
 import Ttm from "./components/Ttm";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
+import Experience from "./components/Experience";
 
 function App() {
   useEffect(() => {
@@ -30,11 +31,6 @@ function App() {
     }
 
     requestAnimationFrame(raf);
-
-    // return () => {
-    //   // Cleanup Lenis on component unmount
-    //   lenis.destroy();
-    // };
   }, []);
 
   const [isLoading, setIsLoading] = useState(true);
@@ -53,13 +49,30 @@ function App() {
       {!isLoading && (
         <>
           <Navbar />
-          <Main />
-          <Landing />
-          <Projects />
-          <Wyfim />
-          <ZoomParallax />
-          <Ttm />
-          <Contact />
+          <main>
+            <section id="landing">
+              <Main />
+            </section>
+            <section id="wyfim">
+              <Landing />
+            </section>
+            <section id="#">
+              <Experience />
+            </section>
+            <section id="">{/* <Projects /> */}</section>
+            <section id="">
+              <Wyfim />
+            </section>
+            <section id="projects">
+              <ZoomParallax />
+            </section>
+            <section id="ttm">
+              <Ttm />
+            </section>
+            <section id="contact">
+              <Contact />
+            </section>
+          </main>
           <Footer />
           <SpeedInsights />
           <Analytics />

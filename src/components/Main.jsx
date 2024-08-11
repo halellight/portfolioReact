@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import image from "../images/praise formal b&w.jpg";
 
 const Main = () => {
+  const handleDownloadCV = () => {
+    // Google Drive link to the CV file
+    const cvUrl =
+      "https://drive.google.com/file/d/18pPPBUCA-A9psg3JppCtehS_cDTH3Xbb/view?usp=sharing";
+    window.open(cvUrl, "_blank"); // Opens the link in a new tab
+  };
+
   const [scrollY, setScrollY] = useState(0);
 
   const handleScroll = () => {
@@ -52,7 +59,10 @@ const Main = () => {
         <span className="text-center md:text-left text-[10px] md:text-xs">
           | SCROLL TO EXPLORE
         </span>
-        <span className="cursor-pointer hover:text-[#00A699] text-center md:text-right text-[10px] md:text-xs">
+        <span
+          onClick={handleDownloadCV}
+          className="cursor-pointer hover:text-[#00A699] text-center md:text-right text-[10px] md:text-xs"
+        >
           READ MY CV
         </span>
       </div>
