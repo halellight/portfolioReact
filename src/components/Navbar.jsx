@@ -37,12 +37,12 @@ const Navbar = () => {
           </p>
         </div>
         <div className="md:flex items-center space-x-4">
-          <span className="p-4 text-gray-500">
+          <span className="p-4 text-gray-500 text-xs md:text-lg lg:text-xl ">
             [ABJ]
             <motion.span
               animate={{ opacity: [1, 0.65, 1] }}
               transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-              className="text-[#00A699] font-bold"
+              className="text-[#00A699] font-bold text-xs md:text-lg lg:text-xl"
             >
               {formattedTime}
             </motion.span>

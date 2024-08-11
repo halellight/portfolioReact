@@ -19,7 +19,7 @@ const Main = () => {
 
   return (
     <div className="relative h-screen bg-[#001b19] flex justify-center items-center overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-[#afa18f] text-[128px] font-bold">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-[#afa18f] lg:text-[128px] font-bold md:text-[72px] text-[48px]">
         <span
           className="block z-0 inset-0"
           style={{
@@ -46,12 +46,14 @@ const Main = () => {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 flex justify-between items-center p-4 text-xs md:text-sm gap-[50px] max-w-[1240px] text-[#afa18f] mx-auto">
-        <span className="text-center md:text-left">PRAISE IBE CHIDUMEBI</span>
+        <span className="text-center md:text-left text-[10px] md:text-xs">
+          PRAISE IBE CHIDUMEBI
+        </span>
         <span className="text-center md:text-left text-[10px] md:text-xs">
           | SCROLL TO EXPLORE
         </span>
-        <span className="cursor-pointer hover:text-[#00A699] text-center md:text-right">
-          WORK WITH ME
+        <span className="cursor-pointer hover:text-[#00A699] text-center md:text-right text-[10px] md:text-xs">
+          READ MY CV
         </span>
       </div>
     </div>

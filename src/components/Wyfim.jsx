@@ -61,7 +61,7 @@ const Wyfim = () => {
         {pictures.map(({ src, rotateZ, opacity, top }, index) => (
           <div key={index} className={styles.main}>
             <div className={styles.el}>
-              {index === 0 && <p>What you will find in me</p>}
+              {index === 0 && <p>Tools I work with</p>}
               <motion.div
                 style={{ src, rotateZ, opacity, top }}
                 className={styles.imageContainer}
