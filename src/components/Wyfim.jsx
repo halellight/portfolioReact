@@ -75,12 +75,12 @@ const Wyfim = () => {
               )}
               <motion.div
                 style={{ rotateZ, opacity, top }}
-                className="h-[7vh] relative mt-20 lg:h-[20vh] md:h-[10vh]"
+                className={`h-[7vh] relative mt-20 lg:h-[20vh] md:h-[10vh] ${iosClass}`}
               >
                 <img
                   src={src}
                   alt={`imagine-${index}`}
-                  className={`w-full h-full object-cover ios:max-h-[30vh] ios:max-w-[20vw] ios:w-[200px] ${iosClass} `}
+                  className={`w-full h-full object-cover  `}
                 />
               </motion.div>
             </div>
