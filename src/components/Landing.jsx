@@ -15,7 +15,7 @@ const Landing = () => {
   });
 
   const paragraph =
-    "Hii, I'm Praise, a visual designer and front-end developer with a passion for creating intuitive and high-performing digital experiences.";
+    "Hii, I'm Praise, a visual designer and front-end developer with an obsession for creating intuitive and high-performing digital experiences.";
   const words = paragraph.split(" ");
 
   return (

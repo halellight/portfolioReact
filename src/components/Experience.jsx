@@ -52,11 +52,11 @@ const ExperienceItem = ({ year, title, company, link }) => {
 
   return (
     <div className="flex flex-col md:flex-row justify-between" ref={container}>
-      <div className="lg:text-3xl md:text-[36px] text-[20px] font-semibold">
+      <div className="lg:text-3xl md:text-[36px] text-[18px] font-semibold">
         {year}
       </div>
       <div className="text-right md:text-right mt-4 md:mt-0">
-        <p className="lg:text-[64px] md:text-[48px] text-[26px] font-semibold flex flex-wrap">
+        <p className="lg:text-[64px] md:text-[48px] text-[24px] font-semibold flex flex-wrap">
           {words.map((word, i) => {
             const start = i / words.length;
             const end = start + 1 / words.length;
