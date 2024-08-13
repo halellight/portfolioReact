@@ -9,7 +9,7 @@ const Section2 = ({ scrollYProgress }) => {
   return (
     <motion.div
       style={{ scale, rotate }}
-      className="h-[80vh] relative bg-[#00A699] text-[24px] flex flex-col items-center justify-center text-white pt-[10vh] "
+      className="h-screen relative bg-[#00A699] text-[24px] flex flex-col items-center justify-center text-white pt-[10vh] "
     >
       <div className="flex flex-col gap-4 px-4 lg:px-8">
         <div className="flex cursor-pointer items-center justify-between w-full">
