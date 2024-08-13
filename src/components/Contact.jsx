@@ -15,7 +15,12 @@ const Contact = () => {
         <div className={styles.contactSection}>
           <div className={styles.contactBox}>
             <div className={styles.letTalk}></div>
-            <p className={styles.email}>praiseibec@gmail.com</p>
+            <a
+              href="mailto:praiseibec@gmail.com?subject=Hello, Praise&body=Hi, my name is ..."
+              className={styles.email}
+            >
+              praiseibec@gmail.com
+            </a>
             <div className={styles.socialLinks}>
               <div>
                 <img src={Ig} alt="" />

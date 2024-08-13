@@ -35,7 +35,7 @@ const Landing = () => {
           </p>
           <p
             ref={container}
-            className="text-[#afa18f] lg:text-[64px] md:text-[48px] text-[32px] font-bold mt-4 flex flex-wrap"
+            className="text-[#afa18f] lg:text-[64px] md:text-[48px] text-[28px] font-bold mt-4 flex flex-wrap"
           >
             {words.map((word, i) => {
               const start = i / words.length;

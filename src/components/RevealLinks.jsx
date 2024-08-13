@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 export const RevealLinks = () => {
+  const [navopen, setNavOpen] = useState(true);
+  const [isActive, setIsActive] = useState(false);
+  const handleNav = () => {
+    setNavOpen(!navopen);
+    setIsActive(!isActive);
+  };
+
   return (
     <section className="grid place-content-center gap-8 bg-[#001B19] px-8 py-24 text-[#afa18f]">
       <FlipLink href="#landing">HOME</FlipLink>

@@ -56,7 +56,7 @@ const ExperienceItem = ({ year, title, company, link }) => {
         {year}
       </div>
       <div className="text-right md:text-right mt-4 md:mt-0">
-        <p className="lg:text-[64px] md:text-[48px] text-[24px] font-semibold flex flex-wrap">
+        <p className="lg:text-[64px] md:text-[48px] text-[28px] font-semibold flex">
           {words.map((word, i) => {
             const start = i / words.length;
             const end = start + 1 / words.length;

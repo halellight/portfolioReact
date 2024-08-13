@@ -12,6 +12,10 @@ const Navbar = () => {
     setNav(!nav);
     setIsActive(!isActive);
   };
+  const closeNav = () => {
+    setNav(false);
+    setIsActive(false);
+  };
 
   const [currentTime, setCurrentTime] = useState(new Date());
 
@@ -82,6 +86,7 @@ const Navbar = () => {
             exit={{ x: "-100%" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="fixed top-0 left-0 w-full h-full bg-[#141414] border-r border-r-gray-900 text-[#afa18f] z-40"
+            onClick={closeNav}
           >
             {/* <ul className="flex flex-col items-center justify-center h-full space-y-4 text-5xl">
               <li className="p-4 cursor-pointer text-[96px] text-[#00A699]">
